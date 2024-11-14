@@ -1,0 +1,41 @@
+@startuml
+entity User {
+  *id : INT
+  --
+  name : STRING
+  email : STRING
+}
+
+entity Profile {
+  *id : INT
+  --
+  user_id : INT
+  bio : TEXT
+  birthdate : DATE
+}
+
+entity Post {
+  *id : INT
+  --
+  user_id : INT
+  title : STRING
+  content : TEXT
+  created_at : DATETIME
+}
+
+entity Tag {
+  *id : INT
+  --
+  name : STRING
+}
+
+entity PostTag {
+  *post_id : INT
+  *tag_id : INT
+}
+
+User ||--o| Profile
+User ||--o{ Post
+Post ||--o{ PostTag 
+Tag ||--o{ PostTag
+@enduml

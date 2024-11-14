@@ -1,24 +1,32 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a basic rails app.
 
-Things you may want to cover:
+It only has models, with common entity relationships for practice. Nothing more.
 
-* Ruby version
+## ER diagram
 
-* System dependencies
+![](./docs/images/erd.png)
 
-* Configuration
+This is what the model structure looks like.
 
-* Database creation
+Made with plantUML text in `docs/erd.puml`
 
-* Database initialization
+## TODO
 
-* How to run the test suite
+You can play with this app however you want. Here are some ideas:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Complete controllers
+- Add frontend
+  - Rails views
+  - Other frontend frameworks (e.g., React, Vue)
+- Write tests
+  - Built-in Rails tests or RSpec
+  - Use FactoryBot for factories
+- Add or modify models
+  - Make DB migrations
+- Switch database
+  - Change from SQLite to MySQL or PostgreSQL
+- Implement authentication and authorization
+- Explore background jobs
+  - Use ActiveJob or Sidekiq for async processing
