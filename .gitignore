@@ -36,3 +36,6 @@
 
 # for MacOS
 .DS_Store
+
+# for byebug
+.byebug_history
