@@ -68,4 +68,11 @@ RSpec.configure do |config|
 
   # factory bot
   config.include FactoryBot::Syntax::Methods
+
+  # show database log
+  # if Rails.env.test?
+  #   Rails.logger = Logger.new(STDOUT)
+  #   Rails.logger.level = Logger::DEBUG
+  #   ActiveRecord::Base.logger = Rails.logger
+  # end
 end
